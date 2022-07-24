@@ -1,0 +1,14 @@
+<div class="chart-container">
+    <span class="chart-column" *ngFor="let data of accountData">
+        <div class="chart-tooltip"
+            [ngClass]="{'hidden': hoveredDay !== data.day}">${{data.amount}}</div>
+        <div class="chart-bar" 
+            [ngClass]="{'current': getCurrentDay(data)}" 
+            [ngStyle]="{ 'height': (data.amount*3) + 'px' }"
+            (mouseenter)="onMouseEnter($event, data)"
+            (mouseleave)="onMouseLeave($event, data)"></div>
+        <div class="chart-label">{{data.day}}</div>
+    </span>
+</div>
+<div class="separator"></div>
+<app-account-spending-total-component [accountData]="accountData"></app-account-spending-total-component>

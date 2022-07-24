@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import '../styles.scss';
+
+:host {
+    font-family: 'DM Sans', sans-serif;
+}
+
+::ng-deep * {
+      
+    margin: 0;
+    padding: 0;
+
+    font-size: $font-size;
+
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top: 16px }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    background-color: $neutral-cream;
+
+    .header-text {
+        font-size: 24px;
+        color: $neutral-brown-dark;
+        font-weight: 700;
+    }
+
+    .section-container {
+
+        width: 460px;
+        padding: 32px;
+
+        // mobile
+        @media screen and (max-width: $mobile) {
+            width: 80%;
+            padding: 16px
+        }
+        
+        border-radius: 12px;
+
+        &.balance {
+            background-color: $primary-red-soft;
+            color: $neutral-orange-pale;
+
+            margin-bottom: 24px;
+
+            // mobile
+            @media screen and (max-width: $mobile) {
+                margin-bottom: 16px;
+            }
+            
+        }
+
+        &.spending {
+            background-color: $neutral-orange-pale;
+        }
+    }
+}

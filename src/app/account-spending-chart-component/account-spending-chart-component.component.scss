@@ -1,0 +1,62 @@
+@import '../../styles.scss';
+
+:host {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    .chart-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        height: 300px;
+
+        .chart-column {
+            width: 50px;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: flex-end;
+    
+            @media screen and (max-width: $mobile) {
+                width: 32px;
+            }
+
+            .chart-tooltip {
+                padding: 10px;
+                align-self: center;
+                margin-bottom: 8px;
+                border-radius: 4px;
+                
+                background-color: $neutral-brown-dark;
+                color: $neutral-orange-pale;
+
+                &.hidden {
+                    opacity: 0;
+                }
+            }
+    
+            .chart-label {
+                color: $neutral-brown-medium;
+                align-self: center;
+                margin-top: 16px;
+            }
+    
+            .chart-bar {
+                background-color: $primary-red-soft;
+                border-radius: 4px;
+
+                &.current {
+                    background-color: $primary-cyan;
+                }
+
+                &:hover {
+                    filter: brightness(125%);
+                }
+            }
+        }
+    }
+
+
+}

@@ -1,27 +1,52 @@
-# ExpensesChartComponent
+# Frontend Mentor - Expenses chart component solution
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+This is a solution to the [Expenses chart component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Development server
+## Table of contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Notes](#notes)
+- [Author](#author)
 
-## Code scaffolding
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Overview
 
-## Build
+### The challenge
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Users should be able to:
 
-## Running unit tests
+- View the bar chart and hover over the individual bars to see the correct amounts for each day
+- See the current day’s bar highlighted in a different colour to the other bars
+- View the optimal layout for the content depending on their device’s screen size
+- See hover states for all interactive elements on the page
+- **Bonus**: Use the JSON data file provided to dynamically size the bars on the chart
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Links
 
-## Running end-to-end tests
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## My process
 
-## Further help
+### Built with
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Angular
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+
+### Notes
+
+- Ideally tooltip would be a seperate / reusable component
+- If more data was provided, weekly / monthly change shouldn't be static
+
+## Author
+
+- Paul Savchuk
+- Frontend Mentor - [@psavchuk](https://www.frontendmentor.io/profile/yourusername)

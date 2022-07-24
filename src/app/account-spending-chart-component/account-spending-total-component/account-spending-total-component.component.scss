@@ -1,0 +1,35 @@
+@import '../../../styles.scss';
+
+:host {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.descriptor-text {
+    font-size: 14px;
+    color: $neutral-brown-medium;
+}
+
+.spent-text {
+    font-size: 42px;
+    color: $neutral-brown-dark;
+    font-weight: 700;
+
+    // mobile
+    @media screen and (max-width: $mobile) { 
+        font-size: 32px;
+    }
+}
+
+.difference-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .difference-text {
+        color: $neutral-brown-dark;
+        font-weight: 700;
+    }
+}
